@@ -1,0 +1,64 @@
+body {
+    background-color: #C1B6CD;
+    overflow: hidden;
+}
+
+#main {
+    width: 105%;
+    height: 100%;
+    margin-top: -5%;
+    margin-left: -2.5%;
+    overflow: hidden;
+}
+
+#header-logo {
+    width: 100%;
+    margin-top: -5%;
+}
+
+#icon-1 {
+    position: absolute;
+    animation: move 30s infinite;
+    width: 4%;
+    height: auto;
+    left: 200px;
+}
+#icon-2 {
+    position: absolute;
+    animation: move 40s infinite;
+    width: 4%;
+    height: auto;
+    left: 400px;
+}
+#icon-3 {
+    position: absolute;
+    animation: move 15s infinite;
+    width: 4%;
+    height: auto;
+    left: 800px;
+}
+#icon-4 {
+    position: absolute;
+    animation: move 20s infinite;
+    width: 4%;
+    height: auto;
+    left: 1000px;
+}
+#icon-5 {
+    position: absolute;
+    animation: move 10s infinite;
+    width: 4%;
+    height: auto;
+    left: 100px;
+}
+
+@keyframes move-1 { 0%{ bottom: -105%; } 100%{ bottom: 115%; }}
+@keyframes move-2 { 0%{ bottom: -107%; } 100%{ bottom: 115%; }}
+@keyframes move-3 { 0%{ bottom: -110%; } 100%{ bottom: 115%; }}
+@keyframes move-4 { 0%{ bottom: -112%; } 100%{ bottom: 115%; }}
+@keyframes move-5 { 0%{ bottom: -114%; } 100%{ bottom: 115%; }}
+@keyframes move-6 { 0%{ bottom: -116%; } 100%{ bottom: 115%; }}
+@keyframes move-7 { 0%{ bottom: -118%; } 100%{ bottom: 115%; }}
+@keyframes move-8 { 0%{ bottom: -120%; } 100%{ bottom: 115%; }}
+@keyframes move-9 { 0%{ bottom: -122%; } 100%{ bottom: 115%; }}
+@keyframes move-10 { 0%{ bottom: -125%; } 100%{ bottom: 115%; }}

@@ -4,29 +4,44 @@ body {
 }
 
 #main {
-    width: 105%;
+    width: 55%;
     height: 100%;
     margin-top: -5%;
-    margin-left: -2.5%;
+    margin-left: 25%;
     overflow: hidden;
 }
 
+@media (max-width: 1250px) {
+        #main {
+                width: 80%;
+                margin-left: 10%;
+        }
+}
+
 #header-logo {
-    max-width: 100%;
-    margin-top: -1%;
+        width: 100%;
     -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 	        animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-    max-height: 30%;
 }
 
 #about-text {
-    max-width: 100%;
-    max-height: 30%;
-    margin: 0 auto;
-    margin-top: -2%;
+    width: 100%;
+    margin-top: -8%;
     -webkit-animation: slide-in-blurred-top-after 2.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 	        animation: slide-in-blurred-top-after 2.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
+
+#container {
+        position: relative;
+}
+#elder-flower {
+        position: absolute;
+        width: 25%;
+        top: 40%;
+        left: 37.5%;
+        -webkit-animation: fade 1s ease-in;
+	        animation: fade 1s ease-in;
+    }
 
 @keyframes move-1 { 0%{ bottom: -101%; } 100%{ bottom: 115%; }}
 @keyframes move-2 { 0%{ bottom: -102%; } 100%{ bottom: 115%; }}
@@ -38,6 +53,8 @@ body {
 @keyframes move-8 { 0%{ bottom: -107%; } 100%{ bottom: 115%; }}
 @keyframes move-9 { 0%{ bottom: -108%; } 100%{ bottom: 115%; }}
 @keyframes move-10 { 0%{ bottom: -109%; } 100%{ bottom: 115%; }}
+
+@keyframes fade { 0%{ opacity: 0%; } 80%{ opacity: 0%; } 100%{ opacity: 100%; }}
 
  @-webkit-keyframes slide-in-blurred-top {
     0% {

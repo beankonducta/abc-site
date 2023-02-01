@@ -1,159 +1,326 @@
 body {
-    background-color: #C1B6CD;
-    overflow: hidden;
-    width: 105%;
+        background-color: #c1b6cd;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: center;
 }
 
 #main {
-    width: 55%;
-    height: 100%;
-    margin-top: -5%;
-    margin-left: 25%;
-    overflow: hidden;
+        width: 80%;
+        overflow: hidden;
+        margin: 0 auto;
+        text-align: center;
 }
 
-@media (max-width: 1250px) {
-        #main {
-                width: 105%;
-                margin-left: -2.5%
-        }
+#inner {
+        margin-top: 5%;
 }
 
 #header-logo {
-        width: 100%;
-    -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-	        animation: slide-in-blurred-top 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+        width: 45%;
+        -webkit-animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+        animation: slide-in-blurred-top 0.6s cubic-bezier(0.23, 1, 0.32, 1) both;
+
 }
 
 #about-text {
-    width: 100%;
-    margin-top: -8%;
-    -webkit-animation: slide-in-blurred-top-after 2.255s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-	        animation: slide-in-blurred-top-after 2.255s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-}
-
-#container {
-        position: relative;
+        width: 45%;
+        margin: 0 auto;
+        margin-top: 0%;
+        -webkit-animation: slide-in-blurred-top-after 2.255s cubic-bezier(0.23, 1, 0.32, 1) both;
+        animation: slide-in-blurred-top-after 2.255s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
 
 #elder-flower {
         position: absolute;
-        width: 25%;
-        top: 40%;
-        left: 38.3%;
+        width: 20%;
+        top: 45%;
+        left: 40%;
         -webkit-animation: fade 1s ease-in;
-	        animation: fade 1s ease-in;
-    }
+        animation: fade 1s ease-in;
+}
 
-@keyframes move-1 { 0%{ bottom: -101%; } 100%{ bottom: 115%; }}
-@keyframes move-2 { 0%{ bottom: -102%; } 100%{ bottom: 115%; }}
-@keyframes move-3 { 0%{ bottom: -103%; } 100%{ bottom: 115%; }}
-@keyframes move-4 { 0%{ bottom: -103.5%; } 100%{ bottom: 115%; }}
-@keyframes move-5 { 0%{ bottom: -104%; } 100%{ bottom: 115%; }}
-@keyframes move-6 { 0%{ bottom: -105%; } 100%{ bottom: 115%; }}
-@keyframes move-7 { 0%{ bottom: -106%; } 100%{ bottom: 115%; }}
-@keyframes move-8 { 0%{ bottom: -107%; } 100%{ bottom: 115%; }}
-@keyframes move-9 { 0%{ bottom: -108%; } 100%{ bottom: 115%; }}
-@keyframes move-10 { 0%{ bottom: -109%; } 100%{ bottom: 115%; }}
+#squiggle {
+        padding-bottom: 1rem;
+        margin-top: -1%;
+        background-image: url("./assets/wave.svg");
+        background-position: 0% 100%;
+        background-repeat: repeat-x;
+        background-size: 250px;
+        color: #d8eeea;
+        animation: animateSquiggles 10s infinite linear;
+}
 
-@keyframes fade { 0%{ opacity: 0%; } 80%{ opacity: 0%; } 100%{ opacity: 100%; }}
+#about-container {
+        position: relative;
+}
 
- @-webkit-keyframes slide-in-blurred-top {
-    0% {
-      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-      -webkit-transform-origin: 50% 0%;
-              transform-origin: 50% 0%;
-      -webkit-filter: blur(40px);
-              filter: blur(40px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-              transform: translateY(0) scaleY(1) scaleX(1);
-      -webkit-transform-origin: 50% 50%;
-              transform-origin: 50% 50%;
-      -webkit-filter: blur(0);
-              filter: blur(0);
-      opacity: 1;
-    }
-  }
-  @keyframes slide-in-blurred-top {
-    0% {
-      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-      -webkit-transform-origin: 50% 0%;
-              transform-origin: 50% 0%;
-      -webkit-filter: blur(40px);
-              filter: blur(40px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-              transform: translateY(0) scaleY(1) scaleX(1);
-      -webkit-transform-origin: 50% 50%;
-              transform-origin: 50% 50%;
-      -webkit-filter: blur(0);
-              filter: blur(0);
-      opacity: 1;
-    }
-  }
+#squiggle-container {
+        width: 45%;
+        margin: 0 auto;
+        text-align: center;
+}
 
-  @keyframes slide-in-blurred-top-after {
-    0% {
-        -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+.spacer {
+        height: 5%;
+}
+
+@media (min-width: 1500px) {
+        #main {
+        }
+        #header-logo {
+                width: 35%;
+        }
+        #about-text {
+                width: 35%;
+        }
+        #elder-flower {
+                width: 15%;
+                top: 48%;
+                left: 42.5%;
+        }
+        #squiggle-container {
+                width: 35%;
+                
+        }
+}
+
+@media (max-width: 1100px) {
+        #main {
+        }
+        #header-logo {
+                width: 60%;
+        }
+        #about-text {
+                width: 60%;
+        }
+        #elder-flower {
+                width: 25%;
+                top: 46%;
+                left: 37.5%;
+        }
+        #squiggle-container {
+                width: 60%;
+                
+        }
+}
+@media (max-width: 900px) {
+        #main {
+        }
+        #header-logo {
+                width: 75%;
+        }
+        #about-text {
+                width: 75%;
+        }
+        #elder-flower {
+                width: 30%;
+                top: 48%;
+                left: 35%;
+        }
+        #squiggle-container {
+                width: 75%;
+                
+        }
+}
+@media (max-width: 750px) {
+        #main {
+        }
+        #header-logo {
+                width: 100%;
+        }
+        #about-text {
+                width: 100%;
+        }
+        #elder-flower {
+                width: 40%;
+                top: 50%;
+                left: 30%;
+        }
+        #squiggle-container {
+                width: 100%;
+                
+        }
+}
+
+@keyframes move-1 {
+        0% {
+                bottom: -101%;
+        }
+        100% {
+                bottom: 115%;
+        }
+}
+@keyframes move-2 {
+        0% {
+                bottom: -102%;
+        }
+        100% {
+                bottom: 115%;
+        }
+}
+@keyframes move-3 {
+        0% {
+                bottom: -103%;
+        }
+        100% {
+                bottom: 115%;
+        }
+}
+@keyframes move-4 {
+        0% {
+                bottom: -103.5%;
+        }
+        100% {
+                bottom: 115%;
+        }
+}
+@keyframes move-5 {
+        0% {
+                bottom: -104%;
+        }
+        100% {
+                bottom: 115%;
+        }
+}
+@keyframes move-6 {
+        0% {
+                bottom: -105%;
+        }
+        100% {
+                bottom: 115%;
+        }
+}
+@keyframes move-7 {
+        0% {
+                bottom: -106%;
+        }
+        100% {
+                bottom: 115%;
+        }
+}
+@keyframes move-8 {
+        0% {
+                bottom: -107%;
+        }
+        100% {
+                bottom: 115%;
+        }
+}
+@keyframes move-9 {
+        0% {
+                bottom: -108%;
+        }
+        100% {
+                bottom: 115%;
+        }
+}
+@keyframes move-10 {
+        0% {
+                bottom: -109%;
+        }
+        100% {
+                bottom: 115%;
+        }
+}
+
+@keyframes fade {
+        0% {
+                opacity: 0%;
+        }
+        80% {
+                opacity: 0%;
+        }
+        100% {
+                opacity: 100%;
+        }
+}
+
+@-webkit-keyframes slide-in-blurred-top {
+        0% {
+                -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
                 transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-        -webkit-transform-origin: 50% 0%;
+                -webkit-transform-origin: 50% 0%;
                 transform-origin: 50% 0%;
-        -webkit-filter: blur(40px);
+                -webkit-filter: blur(40px);
                 filter: blur(40px);
-        opacity: 0;
-      }
-    60% {
-      -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-              transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
-      -webkit-transform-origin: 50% 0%;
-              transform-origin: 50% 0%;
-      -webkit-filter: blur(40px);
-              filter: blur(40px);
-      opacity: 0;
-    }
-    100% {
-      -webkit-transform: translateY(0) scaleY(1) scaleX(1);
-              transform: translateY(0) scaleY(1) scaleX(1);
-      -webkit-transform-origin: 50% 50%;
-              transform-origin: 50% 50%;
-      -webkit-filter: blur(0);
-              filter: blur(0);
-      opacity: 1;
-    }
-  }
+                opacity: 0;
+        }
+        100% {
+                -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+                transform: translateY(0) scaleY(1) scaleX(1);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                -webkit-filter: blur(0);
+                filter: blur(0);
+                opacity: 1;
+        }
+}
+@keyframes slide-in-blurred-top {
+        0% {
+                -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+                transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+                -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+                -webkit-filter: blur(40px);
+                filter: blur(40px);
+                opacity: 0;
+        }
+        100% {
+                -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+                transform: translateY(0) scaleY(1) scaleX(1);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                -webkit-filter: blur(0);
+                filter: blur(0);
+                opacity: 1;
+        }
+}
 
-  @keyframes animateSquiggles {
-  0% {
-    background-position: 0% 100%
-  }
-  25% {
-    background-position: 25% 100%
-  }
-  50% {
-    background-position: 50% 100%
-  }
-  75% {
-    background-position: 75% 100%
-  }
-  100% {
-    background-position: 100% 100%
-  }
-  }
-  
-.squiggle {
-  padding-bottom: 1rem;
-  margin-top: -2%;
-  background-image: url("./assets/wave.svg");
-  background-position: 0% 100%;
-  background-repeat: repeat-x;
-  background-size: 250px;
-  color: #D8EEEA;
-  animation: animateSquiggles 10s infinite linear;
+@keyframes slide-in-blurred-top-after {
+        0% {
+                -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+                transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+                -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+                -webkit-filter: blur(40px);
+                filter: blur(40px);
+                opacity: 0;
+        }
+        60% {
+                -webkit-transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+                transform: translateY(-1000px) scaleY(2.5) scaleX(0.2);
+                -webkit-transform-origin: 50% 0%;
+                transform-origin: 50% 0%;
+                -webkit-filter: blur(40px);
+                filter: blur(40px);
+                opacity: 0;
+        }
+        100% {
+                -webkit-transform: translateY(0) scaleY(1) scaleX(1);
+                transform: translateY(0) scaleY(1) scaleX(1);
+                -webkit-transform-origin: 50% 50%;
+                transform-origin: 50% 50%;
+                -webkit-filter: blur(0);
+                filter: blur(0);
+                opacity: 1;
+        }
+}
+
+@keyframes animateSquiggles {
+        0% {
+                background-position: 0% 100%;
+        }
+        25% {
+                background-position: 25% 100%;
+        }
+        50% {
+                background-position: 50% 100%;
+        }
+        75% {
+                background-position: 75% 100%;
+        }
+        100% {
+                background-position: 100% 100%;
+        }
 }

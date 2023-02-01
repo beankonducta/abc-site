@@ -1,6 +1,6 @@
 window.onload = function() {
-    for(let i = 0; i < 10; i++)
-        addElement();
+    for(let i = 0; i < 100; i++) {}
+        //addElement();
 }
 
 function addElement() {
@@ -8,8 +8,8 @@ function addElement() {
   newImg.src = `./assets/icon-${randomIntFromInterval(1, 6)}.svg`;
   newImg.style.left = `${randomIntFromInterval(0, 100)}%`
   newImg.style.position = "absolute"
-  newImg.style.animation = `move-${randomIntFromInterval(1, 10)} ${randomIntFromInterval(60, 120)}s infinite`
-  newImg.style.width = `${randomIntFromInterval(2, 5)}%`
+  newImg.style.animation = `move-${randomIntFromInterval(1, 10)} ${randomIntFromInterval(30, 90)}s infinite`
+  newImg.style.width = `${randomIntFromInterval(4, 4)}%`
   document.body.append(newImg)
 }
 

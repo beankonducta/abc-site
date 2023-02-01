@@ -27,8 +27,8 @@ body {
 #about-text {
     width: 100%;
     margin-top: -8%;
-    -webkit-animation: slide-in-blurred-top-after 2.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
-	        animation: slide-in-blurred-top-after 2.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+    -webkit-animation: slide-in-blurred-top-after 2.255s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
+	        animation: slide-in-blurred-top-after 2.255s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;
 }
 
 #container {

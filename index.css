@@ -34,11 +34,12 @@ body {
 #container {
         position: relative;
 }
+
 #elder-flower {
         position: absolute;
         width: 25%;
         top: 40%;
-        left: 37.5%;
+        left: 38.3%;
         -webkit-animation: fade 1s ease-in;
 	        animation: fade 1s ease-in;
     }
